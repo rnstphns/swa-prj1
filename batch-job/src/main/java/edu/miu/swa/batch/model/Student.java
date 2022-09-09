@@ -1,22 +1,24 @@
 package edu.miu.swa.batch.model;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.time.LocalDate;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Getter
+@Setter
 public class Student {
 
     @Id
     private String studentId;
     private String fname;
     private String lname;
-    private String GPA;
-    private String DOB;
+    private Double GPA;
+    private Integer age;
+    private LocalDate DOB;
 }
