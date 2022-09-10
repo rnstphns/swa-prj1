@@ -11,7 +11,7 @@ username: admin \
 password: adminpassword 
 
 ## API Endpoint:
-localhost:8080/load
+localhost:8081/load
 
 ## MYSQL container config:
 
