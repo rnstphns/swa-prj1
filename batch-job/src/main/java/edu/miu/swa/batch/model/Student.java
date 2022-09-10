@@ -3,7 +3,9 @@ package edu.miu.swa.batch.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
@@ -15,7 +17,7 @@ import java.time.LocalDate;
 public class Student {
 
     @Id
-    private String studentId;
+    private Integer studentId;
     private String fname;
     private String lname;
     private Double GPA;

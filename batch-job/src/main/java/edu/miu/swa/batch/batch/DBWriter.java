@@ -11,8 +11,12 @@ import java.util.List;
 @Component
 public class DBWriter implements ItemWriter<Student> {
 
-    @Autowired
     private StudentRepository studentRepository;
+
+    @Autowired
+    public DBWriter (StudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
+    }
 
     @Override
     public void write(List<? extends Student> items) throws Exception {

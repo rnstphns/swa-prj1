@@ -2,9 +2,11 @@ package edu.miu.swa.batch.batch;
 
 import edu.miu.swa.batch.model.Student;
 import org.springframework.batch.item.ItemProcessor;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
+@Component
 public class Processor implements ItemProcessor<Student, Student> {
 
     @Override
