@@ -11,7 +11,6 @@ public class Processor implements ItemProcessor<Student, Student> {
 
     @Override
     public Student process(Student student) throws Exception {
-        //TODO this processing might fail
         int age = student.getAge();
         int year = LocalDate.now().getYear() - age;
         student.setDOB(LocalDate.of(year,01,01));
