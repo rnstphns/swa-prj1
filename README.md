@@ -2,19 +2,27 @@
 @since September 2022
 MIU ComPro CS590 Software Architecture course
 
-# Steps to run the application:
-run `docker  compose up` in main directory
+## Steps to run the application:
+>*If jar file is not present in target directory,* \
+*run `mvn clean package` in main directory* 
 
-## Authentication/Authorization details:
-One User 'admin' created with Spring Security ADMIN privileges \
-username: admin \
-password: adminpassword 
+
+run `docker compose up` in main directory
+connect to database with mysql workbench using `localhost:3307` and password below \
+go to http://localhost:8081/load in browser \
+check database in mysql; students should be populated
+
+## MYSQL container config:
+port `3307` \
+root password: `password`
 
 ## API Endpoint:
 localhost:8081/load
 
-## MYSQL container config:
+## API Authentication/Authorization details:
+One User 'admin' created with Spring Security ADMIN privileges \
+username: admin \
+password: adminpassword 
 
-Database: `studentdb` \
-user: `testperson` \
-password: `test1234`
+
+
