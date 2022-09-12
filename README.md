@@ -1,6 +1,8 @@
-@author Ryan Stephens 112274 \
-@since September 2022
+Ryan Stephens (112274), Nora Chaynane, Antonyo Michael, Tsinat Mehari \
+September 2022 \
 MIU ComPro CS590 Software Architecture course
+
+Public repo at: https://github.com/rnstphns/swa-prj1 
 
 ## Steps to run the application:
 >*If jar file is not present in target directory,* \
